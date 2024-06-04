@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CountriesService } from '../../services/contries.service';
 import { switchMap } from 'rxjs';
-import { Country } from '../../interfaces/country';
+import { Country } from '../../interfaces/country.interface';
 
 
 
@@ -10,14 +10,7 @@ import { Country } from '../../interfaces/country';
   selector: 'app-country-page',
   templateUrl: './country-page.component.html',
   styles: [
-    `img{
-      padding: 0.25rem;
-      background-color: #fff;
-      border: 1px solid #dee2e6;
-      border-radius: 0.25rem;
-      max-width: 100%;
-      height: auto;
-    }`
+
   ]
 })
 export class CountryPageComponent implements OnInit{
